@@ -56,12 +56,7 @@ For this project, I used [ElevenLabs](https://elevenlabs.io) to generate emotion
 
 See [finetune.ipynb](finetune.ipynb) for the complete training pipeline.
 
-**Training data:** Clone the [Kyutai TTS voices repo](https://huggingface.co/kyutai/helium-1-preview-tts-voices) with git lfs to get the actual audio files:
-
-```bash
-git lfs install
-git clone https://huggingface.co/kyutai/helium-1-preview-tts-voices
-```
+**Training data:** Clone the [Kyutai TTS voices repo](https://huggingface.co/kyutai/tts-voices) with git lfs to get the actual audio files
 
 **Key hyperparameters:**
 - Last 2 encoder layers unfrozen (1.5M trainable params, ~12% of original encoder)
